@@ -1,5 +1,8 @@
 import PortfolioImage from "@/public/portfolio-img.svg";
 import Image from "next/image";
+import VueJsLogo from "@/public/vuejs-original logo.svg";
+import TailwindLogo from "@/public/tailwind-logo.svg";
+import LaravelLogo from "@/public/laravel-logo.svg";
 import AboutMeImage from "@/public/brief-information.svg";
 export default function Home() {
   return (
@@ -191,6 +194,51 @@ export default function Home() {
         <span className=" my-20 text-6xl font-extrabold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent ">
           Tech Stack and Tools
         </span>
+        <div className="flex text-white">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="w-180 grid grid-rows-12 gap-5">
+              <div className="border row-span-7 px-10 py-5 rounded-2xl">
+                {" "}
+                Core Stack
+                <div className="grid grid-cols-3">
+                  <div className="justify-between items-center flex flex-col">
+                    <div>
+                      <Image alt="Image of Vue.js" src={VueJsLogo} />
+                    </div>
+                    <div>Vue.js </div>
+                  </div>
+                  <div className="justify-between items-center flex flex-col">
+                    <div>
+                      <Image alt="Image of Laravel" src={LaravelLogo} />
+                    </div>
+                    <div>Laravel </div>
+                  </div>
+                  <div className="justify-between items-center flex flex-col">
+                    <div>
+                      <Image alt="Image of Tailwind" src={TailwindLogo} />
+                    </div>
+                    <div>Vue.js </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border row-span-5   px-10 py-5 rounded-2xl">
+                {" "}
+                Database
+              </div>
+            </div>
+            <div className="w-180   grid grid-cols-12 grid-rows-12 gap-3">
+              <div className="col-span-12 border row-span-5 px-10 py-5 rounded-2xl">
+                Languages{" "}
+              </div>
+              <div className="border col-span-5 row-span-12 px-10 py-5 rounded-2xl">
+                Libraries & Frameworks{" "}
+              </div>
+              <div className="border col-span-7 row-span-12 px-10 py-5 rounded-2xl">
+                DevOps and Tools{" "}
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
