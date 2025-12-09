@@ -1,9 +1,10 @@
 import PortfolioImage from "@/public/portfolio-img.svg";
 import Image from "next/image";
+import AboutMeImage from "@/public/brief-information.svg";
 export default function Home() {
   return (
     <main
-      className=" w-full   min-h-screen font-main
+      className=" w-full   min-h-screen font-main 
       bg-linear-to-b from-neutral-900 from-20% via-neutral-900 via-40% to-neutral-800 to-90% "
     >
       <header className="border sticky w-fit top-5 border-gray-600 rounded-2xl px-20 py-6 mx-auto">
@@ -40,7 +41,7 @@ export default function Home() {
           </li>
         </ul>
       </header>
-      <section className="flex flex-col items-center justify-center ">
+      <section className="flex flex-col items-center justify-center my-20 ">
         <div className="grid grid-cols-2 items-center justify-center gap-40  mx-20 min-h-[70vh] ">
           <div>
             {" "}
@@ -54,15 +55,17 @@ export default function Home() {
               <span className="bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent  ">
                 Peter{" "}
               </span>
-            </span>
-            <br></br>
-            <span className="text-2xl/15 font-semibold ">
-              An information technology fresh graduate interested in everything{" "}
-              <span className=" bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent  ">
-                {" "}
-                web development.
+              <br></br>
+              <span className="text-2xl/15 font-semibold ">
+                An information technology fresh graduate interested in
+                everything{" "}
+                <span className=" bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent  ">
+                  {" "}
+                  web development.
+                </span>
               </span>
             </span>
+
             <br></br>
             <button className="group bg-white hover:bg-linear-to-r w-full hover:scale-110 ease-in transition-all duration-300  cursor-pointer from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% text-white font-semibold rounded-2xl p-1">
               <span className="flex justify-center w-full bg-neutral-800  rounded-2xl p-2">
@@ -118,6 +121,76 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="flex flex-col items-center justify-center  ">
+        <span className=" my-20 text-6xl font-extrabold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent ">
+          About me
+        </span>
+        <div className="flex text-white">
+          <div className="grid grid-cols-2">
+            <div className="max-w-161">
+              <span className="text-xl/10 tracking-widest">
+                {" "}
+                <span className=" font-bold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent">
+                  {" "}
+                  `Sup! I’m
+                </span>{" "}
+                <br />
+                <span className="font-extrabold text-5xl">
+                  {" "}
+                  Peter Wilrexe Escueta,
+                </span>{" "}
+                <br /> a graduate from Polytechnic University of the
+                Philippines. I initially delved into tech because of my interest
+                in technology and machines but ended up liking developing after
+                seeing the systems I’ve made be put into use.
+                <br />
+                <br />
+                My development stack is built on{" "}
+                <span className=" font-bold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent">
+                  {" "}
+                  Laravel PHP
+                </span>{" "}
+                and{" "}
+                <span className=" font-bold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent">
+                  {" "}
+                  Vue.js{" "}
+                </span>
+                , though I’m currently diving deep into{" "}
+                <span className=" font-bold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent">
+                  {" "}
+                  Java{" "}
+                </span>
+                to expand my backend architecture skills.
+                <br />
+                <br />
+                I’m working towards that dream curved monitor setup one commit
+                at a time.
+                <br />
+                <br />
+                I'm currently developing an{" "}
+                <span className=" font-bold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent">
+                  {" "}
+                  AI chatbot{" "}
+                </span>{" "}
+                for this portfolio just in case you're feeling lazy and want the
+                quick summary instead of reading this.
+              </span>
+            </div>
+            <div className="flex justify-center items-center">
+              {" "}
+              <Image
+                src={AboutMeImage}
+                alt="A photo of VSCode IDE style information about me"
+              ></Image>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center  ">
+        <span className=" my-20 text-6xl font-extrabold bg-linear-to-r from-blue-400 from-20% via-blue-200 via-60% to-blue-400 to-100% bg-clip-text text-transparent ">
+          Tech Stack and Tools
+        </span>
       </section>
     </main>
   );
